@@ -28,15 +28,15 @@ const BenefitCard: React.FC<BenefitProps> = ({
             <h3 className="text-xl font-gaming font-bold">{title}</h3>
           </div>
           <p className="text-gray-300 mb-4">{description}</p>
-          <div className="mt-auto">
+          {/* <div className="mt-auto">
             <div className="bg-black bg-opacity-70 p-1 rounded-lg mb-4">
               <img
-                src={imageUrl}
+                src='512x512.png'
                 alt={title}
                 className="rounded w-full h-32 object-cover"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </ScrollReveal>

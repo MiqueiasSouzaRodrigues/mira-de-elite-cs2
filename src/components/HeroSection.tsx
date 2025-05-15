@@ -28,9 +28,9 @@ const HeroSection: React.FC = () => {
           className="absolute top-0 left-0 w-full h-full object-cover"
           poster="/hero-bg.jpg" // Fallback image while video loads
         >
-          <source src="/cs2-gameplay.mp4" type="video/mp4" />
+          <source src="smokes_vid2.mp4" type="video/mp4" />
           {/* Fallback if video can't play */}
-          <img src="/hero-bg.jpg" alt="CS2 Gameplay" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="header_ctt.png" alt="CS2 Gameplay" className="absolute inset-0 w-full h-full object-cover" />
         </video>
         <div className="absolute inset-0 bg-black bg-opacity-60 backdrop-filter backdrop-blur-sm"></div>
       </div>
@@ -71,10 +71,10 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-float">
+          {/* <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-float">
             <div className="relative w-full max-w-md">
               <img
-                src="/gameplay-preview.jpg"
+                src="header_ctt.png"
                 alt="CS2 Gameplay com Bot"
                 className="rounded-lg shadow-2xl neon-border"
               />
@@ -82,7 +82,7 @@ const HeroSection: React.FC = () => {
                 PREMIUM
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

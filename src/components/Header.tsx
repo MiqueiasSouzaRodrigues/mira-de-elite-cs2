@@ -36,7 +36,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
             <img
-              src="/logo.png"
+              src="512x512.png"
               alt="CS2 Bot Logo"
               className="h-10 mr-2"
               onError={(e) => {
@@ -51,20 +51,20 @@ const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8 font-gaming">
-            <a href="#hero" className="text-gray-300 hover:text-neon transition-colors">
+          <nav className="hidden md:flex space-x-8 font-gaming text-xl">
+            <a href="#hero" className="text-gray-400 hover:text-neon transition-colors">
               Início
             </a>
-            <a href="#benefits" className="text-gray-300 hover:text-neon transition-colors">
+            <a href="#benefits" className="text-gray-400 hover:text-neon transition-colors">
               Recursos
             </a>
-            <a href="#demo" className="text-gray-300 hover:text-neon transition-colors">
+            <a href="#demo" className="text-gray-400 hover:text-neon transition-colors">
               Demo
             </a>
-            <a href="#pricing" className="text-gray-300 hover:text-neon transition-colors">
+            <a href="#pricing" className="text-gray-400 hover:text-neon transition-colors">
               Preços
             </a>
-            <a href="#faq" className="text-gray-300 hover:text-neon transition-colors">
+            <a href="#faq" className="text-gray-400 hover:text-neon transition-colors">
               FAQ
             </a>
           </nav>

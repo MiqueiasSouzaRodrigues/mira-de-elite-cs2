@@ -67,12 +67,12 @@ const FaqSection: React.FC = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-gaming-darker rounded-lg overflow-hidden border border-gray-800"
+                className="bg-gaming-darker rounded-lg overflow-hidden border border-gray-800 text-xl"
               >
-                <AccordionTrigger className="px-6 py-4 text-left font-gaming hover:no-underline text-white hover:text-neon">
+                <AccordionTrigger className="px-6 py-4 text-left font-gaming hover:no-underline text-white hover:text-neon text-xl">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 pt-0 text-gray-300">
+                <AccordionContent className="px-6 pb-4 pt-0 text-gray-300 text-lg">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -81,13 +81,13 @@ const FaqSection: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <h3 className="font-gaming text-xl mb-4">
+          <h3 className="font-gaming text-2xl mb-4">
             Ainda tem dúvidas? Fale diretamente com nosso suporte
           </h3>
           <Button
             size="lg"
             variant="outline"
-            className="text-neon border-neon hover:bg-neon hover:bg-opacity-10 gap-2"
+            className="text-neon border-neon hover:bg-neon hover:bg-opacity-10 gap-2 text-xl"
           >
             <WhatsappIcon />
             Tirar Dúvidas com Suporte
@@ -109,6 +109,7 @@ const WhatsappIcon: React.FC = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
+    
   >
     <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
     <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />

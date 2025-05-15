@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-4">
               <img
-                src="/logo.png"
+                src="512x512.png"
                 alt="CS2 Bot Logo"
                 className="h-10 mr-2"
                 onError={(e) => {

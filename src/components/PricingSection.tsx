@@ -72,7 +72,6 @@ const PricingSection: React.FC = () => {
       features: [
         "Acesso a todos os recursos",
         "Suporte básico via WhatsApp",
-        "Teste antes de comprar",
       ],
     },
     {
@@ -84,7 +83,7 @@ const PricingSection: React.FC = () => {
         "Acesso a todos os recursos",
         "Atualizações constantes",
         "Suporte prioritário 24/7",
-        "Troca de conta sem custo adicional",
+      
       ],
       isPopular: false,
     },
@@ -97,8 +96,7 @@ const PricingSection: React.FC = () => {
         "Acesso ilimitado para sempre",
         "Todas as atualizações futuras",
         "Suporte VIP 24/7",
-        "Múltiplas contas",
-        "Configurações personalizadas",
+
       ],
       isPopular: true,
     },
@@ -121,10 +119,10 @@ const PricingSection: React.FC = () => {
         </div>
 
         <div className="mt-12 bg-gaming-darker p-6 rounded-lg text-center">
-          <h3 className="font-gaming font-bold text-xl mb-4">
+          <h3 className="font-gaming font-bold text-2xl mb-4">
             Garantias e Segurança
           </h3>
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-3 gap-4 text-xl">
             <div className="flex items-center justify-center">
               <CircleCheck className="h-5 w-5 text-neon mr-2" />
               <span>Atualizações constantes</span>

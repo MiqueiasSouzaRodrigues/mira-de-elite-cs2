@@ -54,28 +54,28 @@ const PopupNotification: React.FC = () => {
 
   return (
     <div
-      className={`fixed bottom-6 left-6 z-40 bg-gaming-darker border border-neon shadow-lg rounded-lg p-4 transform transition-all duration-300 max-w-xs ${
-        isVisible
-          ? "translate-y-0 opacity-100"
-          : "translate-y-20 opacity-0 pointer-events-none"
-      }`}
-    >
-      <div className="flex items-center">
-        <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-        <p className="text-sm">
-          <span className="font-bold">{currentNotification.name}</span> de{" "}
-          <span className="font-bold">{currentNotification.location}</span>{" "}
-          acabou de adquirir o plano{" "}
-          <span className="font-bold">{currentNotification.plan}</span>
-          <button 
-            className="ml-2 text-neon font-medium inline-flex items-center text-xs"
-            onClick={() => window.location.href = "#pricing"}
-          >
-            Ver planos <ArrowRight className="ml-1 h-3 w-3" />
-          </button>
-        </p>
-      </div>
-    </div>
+  className={`fixed bottom-6 left-6 z-40 bg-gaming-darker border border-neon shadow-lg rounded-lg p-6 transform transition-all duration-300 max-w-sm ${
+    isVisible
+      ? "translate-y-0 opacity-100"
+      : "translate-y-20 opacity-0 pointer-events-none"
+  }`}
+>
+  <div className="flex items-center">
+    <div className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-pulse"></div>
+    <p className="text-base">
+      <span className="font-bold">{currentNotification.name}</span> de{" "}
+      <span className="font-bold">{currentNotification.location}</span>{" "}
+      acabou de adquirir o plano{" "}
+      <span className="font-bold">{currentNotification.plan}</span>
+      <button 
+        className="ml-2 text-neon font-medium inline-flex items-center text-base"
+        onClick={() => window.location.href = "#pricing"}
+      >
+        Ver planos <ArrowRight className="ml-1 h-4 w-4" />
+      </button>
+    </p>
+  </div>
+</div>
   );
 };
 

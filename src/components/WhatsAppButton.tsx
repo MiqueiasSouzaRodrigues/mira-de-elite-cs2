@@ -26,7 +26,7 @@ const WhatsAppButton: React.FC = () => {
   return (
     <Button
       className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] rounded-full w-16 h-16 flex items-center justify-center shadow-lg"
-      onClick={() => window.open("https://wa.me/5511912345678", "_blank")}
+      onClick={() => window.open("https://wa.me/5562992087765", "_blank")}
     >
       <WhatsappIcon />
     </Button>
