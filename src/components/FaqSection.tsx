@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Question } from "lucide-react";
+import { HelpCircle } from "lucide-react";
 
 interface FaqItem {
   question: string;
@@ -52,7 +52,7 @@ const FaqSection: React.FC = () => {
     <section id="faq" className="py-20 bg-gaming-gradient-dark">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center mb-8">
-          <Question className="h-8 w-8 text-neon mr-2" />
+          <HelpCircle className="h-8 w-8 text-neon mr-2" />
           <h2 className="section-heading">
             Perguntas <span className="neon-text">Frequentes</span>
           </h2>
