@@ -1,9 +1,11 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,9 +20,13 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? "bg-black bg-opacity-90 backdrop-blur-md shadow-lg"
           : "bg-transparent"
@@ -43,44 +49,91 @@ const Header: React.FC = () => {
               <span className="text-neon">Pro</span>
             </span>
           </div>
-          <nav className="hidden md:flex space-x-6 font-medium">
-            <a href="#hero" className="text-gray-300 hover:text-neon">
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex space-x-8 font-gaming">
+            <a href="#hero" className="text-gray-300 hover:text-neon transition-colors">
               Início
             </a>
-            <a href="#benefits" className="text-gray-300 hover:text-neon">
+            <a href="#benefits" className="text-gray-300 hover:text-neon transition-colors">
               Recursos
             </a>
-            <a href="#demo" className="text-gray-300 hover:text-neon">
+            <a href="#demo" className="text-gray-300 hover:text-neon transition-colors">
               Demo
             </a>
-            <a href="#pricing" className="text-gray-300 hover:text-neon">
+            <a href="#pricing" className="text-gray-300 hover:text-neon transition-colors">
               Preços
             </a>
-            <a href="#faq" className="text-gray-300 hover:text-neon">
+            <a href="#faq" className="text-gray-300 hover:text-neon transition-colors">
               FAQ
             </a>
           </nav>
+
+          {/* Desktop CTA Button */}
           <Button className="cta-button hidden md:flex">COMPRAR AGORA</Button>
 
-          {/* Mobile menu button */}
-          <button className="md:hidden text-white">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+          {/* Mobile Menu Button */}
+          <button 
+            className="md:hidden text-white p-2" 
+            onClick={toggleMobileMenu}
+            aria-label="Menu"
+          >
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-black bg-opacity-95 backdrop-blur-md animate-fade-in">
+          <div className="container mx-auto px-4 py-4">
+            <nav className="flex flex-col space-y-4 font-gaming text-center">
+              <a 
+                href="#hero" 
+                className="text-gray-300 hover:text-neon py-2 text-xl"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Início
+              </a>
+              <a 
+                href="#benefits" 
+                className="text-gray-300 hover:text-neon py-2 text-xl"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Recursos
+              </a>
+              <a 
+                href="#demo" 
+                className="text-gray-300 hover:text-neon py-2 text-xl"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Demo
+              </a>
+              <a 
+                href="#pricing" 
+                className="text-gray-300 hover:text-neon py-2 text-xl"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Preços
+              </a>
+              <a 
+                href="#faq" 
+                className="text-gray-300 hover:text-neon py-2 text-xl"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                FAQ
+              </a>
+              <Button className="cta-button mx-auto mt-2" onClick={() => setMobileMenuOpen(false)}>
+                COMPRAR AGORA
+              </Button>
+            </nav>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

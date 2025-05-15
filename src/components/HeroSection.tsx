@@ -1,14 +1,43 @@
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 
 const HeroSection: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  
+  useEffect(() => {
+    // Auto-play the background video when component mounts
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.log("Auto-play was prevented:", error);
+      });
+    }
+  }, []);
+
   return (
-    <section id="hero" className="hero flex items-center justify-center">
-      <div className="container mx-auto px-4 py-20 md:py-32 text-center lg:text-left">
+    <section id="hero" className="hero relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Fullscreen video background */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video 
+          ref={videoRef}
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          poster="/hero-bg.jpg" // Fallback image while video loads
+        >
+          <source src="/cs2-gameplay.mp4" type="video/mp4" />
+          {/* Fallback if video can't play */}
+          <img src="/hero-bg.jpg" alt="CS2 Gameplay" className="absolute inset-0 w-full h-full object-cover" />
+        </video>
+        <div className="absolute inset-0 bg-black bg-opacity-60 backdrop-filter backdrop-blur-sm"></div>
+      </div>
+
+      <div className="container mx-auto px-4 py-20 md:py-32 text-center lg:text-left relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-1 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-gaming font-bold mb-4">
               Domine o CS2 com{" "}
               <span className="neon-text">Precisão Impossível.</span> Sem Ser
@@ -42,7 +71,7 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-float">
             <div className="relative w-full max-w-md">
               <img
                 src="/gameplay-preview.jpg"
