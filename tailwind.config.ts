@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for our CS2 bot landing page
+				neon: "#39FF14",
+				gaming: {
+					dark: "#121212",
+					darker: "#0A0A0A",
+					accent: "#39FF14",
+					orange: "#F97316",
+					red: "#ea384c"
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,31 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-neon': {
+					'0%, 100%': {
+						opacity: '1',
+						boxShadow: '0 0 15px rgba(57, 255, 20, 0.7)'
+					},
+					'50%': {
+						opacity: '0.8',
+						boxShadow: '0 0 25px rgba(57, 255, 20, 0.9)'
+					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-neon': 'pulse-neon 2s infinite',
+				'float': 'float 3s ease-in-out infinite'
+			},
+			fontFamily: {
+				'gaming': ['Rajdhani', 'sans-serif'],
+				'sans': ['Inter', 'sans-serif']
 			}
 		}
 	},
