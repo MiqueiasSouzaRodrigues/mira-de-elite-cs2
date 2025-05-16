@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-neon border-neon hover:bg-neon hover:bg-opacity-10 text-lg"
+                className="text-neon border-neon hover:bg-neon hover:bg-opacity 10 text-lg"
               >
                 TESTE GRÁTIS
               </Button>

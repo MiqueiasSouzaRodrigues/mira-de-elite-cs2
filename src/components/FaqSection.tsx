@@ -87,7 +87,7 @@ const FaqSection: React.FC = () => {
           <Button
             size="lg"
             variant="outline"
-            className="text-neon border-neon hover:bg-neon hover:bg-opacity-10 gap-2 text-xl"
+            className="text-neon border-neon hover:bg-neon hover:bg-opacity 10 gap-2 text-xl"
           >
             <WhatsappIcon />
             Tirar Dúvidas com Suporte
