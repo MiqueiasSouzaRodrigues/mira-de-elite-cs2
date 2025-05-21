@@ -64,38 +64,41 @@ const PricingPlan: React.FC<PlanProps> = ({
 
 const PricingSection: React.FC = () => {
   const plans = [
-    {
-      title: "1 Dia de Teste",
-      price: "R$ 29,90",
-      duration: "/dia",
-      icon: <CalendarDays className="h-8 w-8 text-neon" />,
-      features: [
-        "Acesso a todos os recursos",
-        "Suporte básico via WhatsApp",
-      ],
-    },
-    {
-      title: "Plano Mensal",
-      price: "R$ 119,90",
-      duration: "/mês",
-      icon: <CalendarDays className="h-8 w-8 text-neon" />,
-      features: [
-        "Acesso a todos os recursos",
-        "Atualizações constantes",
-        "Suporte prioritário 24/7",
-      
-      ],
+     {
+    title: "TKZ External",
+    price: "R$ 129,90",
+    duration: "/único",
+    icon: <CalendarDays className="h-8 w-8 text-neon" />,
+    features: [
+      "Aimbot leve e Triggerbot externos",
+      "Safe para jogadores legit",
+      "Baixo consumo de CPU",
+      "Suporte por 15 dias via WhatsApp",
+    ],
+  },
+{
+    title: "DuneCore v3.2",
+    price: "R$ 129,90",
+    duration: "/único",
+    icon: <CalendarDays className="h-8 w-8 text-neon" />,
+    features: [
+      "Triggerbot, Aim Assist, AudioRadar",
+      "Humanizer + configuração personalizada",
+      "Atualizações manuais de offsets incluídas",
+      "Suporte por 15 dias via Discord",
+    ],
       isPopular: false,
     },
     {
-      title: "Vitalício",
-      price: "R$ 499,90",
-      duration: "/único",
-      icon: <Infinity className="h-8 w-8 text-neon" />,
-      features: [
-        "Acesso ilimitado para sempre",
-        "Todas as atualizações futuras",
-        "Suporte VIP 24/7",
+    title: "Combo Elite (TKZ + DuneCore)",
+    price: "R$ 229,90",
+    duration: "/único",
+    icon: <Infinity className="h-8 w-8 text-neon" />,
+    features: [
+      "Acesso aos dois cheats (TKZ + DuneCore)",
+      "Instalação guiada e configs otimizadas",
+      "Atualizações mensais incluídas por 30 dias",
+      "Suporte completo via Discord ou WhatsApp",
 
       ],
       isPopular: true,
