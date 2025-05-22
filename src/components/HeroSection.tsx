@@ -28,9 +28,9 @@ const HeroSection: React.FC = () => {
           className="absolute top-0 left-0 w-full h-full object-cover"
           poster="/hero-bg.jpg" // Fallback image while video loads
         >
-          <source src="smokes_vid2.mp4" type="video/mp4" />
+          <source src="/smokes_vid2.mp4" type="video/mp4" />
           {/* Fallback if video can't play */}
-          <img src="header_ctt.png" alt="CS2 Gameplay" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="/header_ctt.png" alt="CS2 Gameplay" className="absolute inset-0 w-full h-full object-cover" />
         </video>
         <div className="absolute inset-0 bg-black bg-opacity-60 backdrop-filter backdrop-blur-sm"></div>
       </div>
