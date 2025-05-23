@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { CircleCheck, CalendarDays, Infinity } from "lucide-react";
+import { link } from "fs";
 
 interface PlanProps {
   title: string;
@@ -75,6 +76,7 @@ const PricingSection: React.FC = () => {
       "Baixo consumo de CPU",
       "Suporte por 15 dias via WhatsApp",
     ],
+    link:"https://pay.hotmart.com/J99891192E",
   },
 {
     title: "DuneCore v3.2",
@@ -87,6 +89,7 @@ const PricingSection: React.FC = () => {
       "Atualizações manuais de offsets incluídas",
       "Suporte por 15 dias via Discord",
     ],
+    link:"https://pay.hotmart.com/P99892495B",
       isPopular: false,
     },
     {
@@ -101,6 +104,7 @@ const PricingSection: React.FC = () => {
       "Suporte completo via Discord ou WhatsApp",
 
       ],
+      link:"https://pay.hotmart.com/D99892524U",
       isPopular: true,
     },
   ];
