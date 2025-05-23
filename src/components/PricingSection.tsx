@@ -71,7 +71,7 @@ const PricingSection: React.FC = () => {
   const plans = [
      {
     title: "TKZ External",
-    price: "R$ 129,90",
+    price: "R$ 229,90",
     duration: "/único",
     icon: <CalendarDays className="h-8 w-8 text-neon" />,
     features: [
@@ -84,7 +84,7 @@ const PricingSection: React.FC = () => {
   },
 {
     title: "DuneCore v3.2",
-    price: "R$ 129,90",
+    price: "R$ 229,90",
     duration: "/único",
     icon: <CalendarDays className="h-8 w-8 text-neon" />,
     features: [
@@ -98,7 +98,7 @@ const PricingSection: React.FC = () => {
     },
     {
     title: "Combo Elite (TKZ + DuneCore)",
-    price: "R$ 229,90",
+    price: "R$ 429,90",
     duration: "/único",
     icon: <Infinity className="h-8 w-8 text-neon" />,
     features: [
