@@ -53,13 +53,13 @@ const PopupNotification: React.FC = () => {
   };
 
   return (
-    <div
-  className={`fixed bottom-6 left-6 z-40 bg-gaming-darker border border-neon shadow-lg rounded-lg p-6 transform transition-all duration-300 max-w-sm ${
-    isVisible
-      ? "translate-y-0 opacity-100"
-      : "translate-y-20 opacity-0 pointer-events-none"
-  }`}
+<div
+  className={`fixed bottom-4 left-4 z-40 bg-gaming-darker border border-neon shadow-lg rounded-lg 
+  p-4 sm:p-6 max-w-xs sm:max-w-sm 
+  transform transition-all duration-300
+  ${isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0 pointer-events-none"}`}
 >
+
   <div className="flex items-center">
     <div className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-pulse"></div>
     <p className="text-base">
