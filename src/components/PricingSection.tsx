@@ -80,7 +80,7 @@ const PricingSection: React.FC = () => {
       "Baixo consumo de CPU",
       "Suporte por 15 dias via WhatsApp",
     ],
-    link:"https://pay.hotmart.com/J99891192E",
+    link:"https://pay.hotmart.com/J99891192E?off=hwqswccwE",
   },
 {
     title: "DuneCore v3.2",
@@ -93,7 +93,7 @@ const PricingSection: React.FC = () => {
       "Atualizações manuais de offsets incluídas",
       "Suporte por 15 dias via Discord",
     ],
-    link:"https://pay.hotmart.com/P99892495B",
+    link:"https://pay.hotmart.com/P99892495B?off=k1l1pghw",
       isPopular: false,
     },
     {
@@ -108,7 +108,7 @@ const PricingSection: React.FC = () => {
       "Suporte completo via Discord ou WhatsApp",
 
       ],
-      link:"https://pay.hotmart.com/D99892524U",
+      link:"https://pay.hotmart.com/D99892524U?off=czdpgkvw",
       isPopular: true,
     },
   ];

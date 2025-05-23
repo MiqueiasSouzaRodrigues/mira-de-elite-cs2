@@ -88,7 +88,7 @@ const DemoSection: React.FC = () => {
             </div>
             <div className="mt-6 text-center">
 <a
-  href="https://pay.hotmart.com/J99891192E"
+  href="https://pay.hotmart.com/D99892524U?off=czdpgkvw"
   target="_blank"
   rel="noopener noreferrer"
 >

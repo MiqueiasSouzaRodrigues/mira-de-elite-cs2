@@ -19,7 +19,7 @@ const FinalCTA: React.FC = () => {
             Junte-se aos milhares de jogadores que já dominam suas partidas com nosso bot.
           </p>
 <a
-  href="https://pay.hotmart.com/D99892524U"
+  href="https://pay.hotmart.com/D99892524U?off=czdpgkvw"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-block"

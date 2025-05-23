@@ -71,7 +71,7 @@ const Header: React.FC = () => {
 
           {/* Desktop CTA Button */}
           <a
-  href="https://pay.hotmart.com/D99892524U"
+  href="https://pay.hotmart.com/D99892524U?off=czdpgkvw"
   target="_blank"
   rel="noopener noreferrer"
   className="hidden md:flex"
@@ -136,7 +136,7 @@ const Header: React.FC = () => {
                 FAQ
               </a>
 <a
-  href="https://pay.hotmart.com/D99892524U"
+  href="https://pay.hotmart.com/D99892524U?off=czdpgkvw"
   target="_blank"
   rel="noopener noreferrer"
   className="mx-auto mt-2 w-fit"

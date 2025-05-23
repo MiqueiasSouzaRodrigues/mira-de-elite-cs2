@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
   <a
-    href="https://pay.hotmart.com/D99892524U"
+    href="https://pay.hotmart.com/D99892524U?off=czdpgkvw"
     target="_blank"
     rel="noopener noreferrer"
   >

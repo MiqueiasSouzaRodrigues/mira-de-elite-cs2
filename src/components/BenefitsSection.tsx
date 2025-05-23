@@ -108,7 +108,7 @@ const BenefitsSection: React.FC = () => {
         <ScrollReveal delay={800}>
           <div className="mt-12 text-center">
 <a
-  href="https://pay.hotmart.com/D99892524U"
+  href="https://pay.hotmart.com/D99892524U?off=czdpgkvw"
   target="_blank"
   rel="noopener noreferrer"
 >
