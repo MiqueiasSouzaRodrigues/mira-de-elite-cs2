@@ -78,8 +78,8 @@ const DemoSection: React.FC = () => {
               <div className="relative pb-[56.25%] h-0">
                 <video
                   className="absolute top-0 left-0 w-full h-full object-cover"
-                    src="/videoplayback (1).mp4"
-                    autoPlay
+                    src="/videoplayback.mp4"
+                    autoPlay 
                     loop
                     muted
                     playsInline

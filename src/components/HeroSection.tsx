@@ -20,8 +20,8 @@ const HeroSection: React.FC = () => {
       {/* Fullscreen video background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video 
-          ref={videoRef}
-          autoPlay 
+          ref={videoRef} 
+          autoPlay
           loop 
           muted 
           playsInline
@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
           {/* Fallback if video can't play */}
           <img src="/header_ctt.png" alt="CS2 Gameplay" className="absolute inset-0 w-full h-full object-cover" />
         </video>
-        <div className="absolute inset-0 bg-black bg-opacity-60 backdrop-filter backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm"></div>
       </div>
 
       <div className="container mx-auto px-4 py-20 md:py-32 text-center lg:text-left relative z-10">
