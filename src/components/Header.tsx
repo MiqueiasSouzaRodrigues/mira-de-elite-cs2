@@ -70,7 +70,15 @@ const Header: React.FC = () => {
           </nav>
 
           {/* Desktop CTA Button */}
-          <Button className="cta-button hidden md:flex">COMPRAR AGORA</Button>
+          <a
+  href="https://pay.hotmart.com/D99892524U"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden md:flex"
+>
+  <Button className="cta-button">COMPRAR AGORA</Button>
+</a>
+
 
           {/* Mobile Menu Button */}
           <button 
@@ -127,9 +135,16 @@ const Header: React.FC = () => {
               >
                 FAQ
               </a>
-              <Button className="cta-button mx-auto mt-2" onClick={() => setMobileMenuOpen(false)}>
-                COMPRAR AGORA
-              </Button>
+<a
+  href="https://pay.hotmart.com/D99892524U"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mx-auto mt-2 w-fit"
+  onClick={() => setMobileMenuOpen(false)}
+>
+  <Button className="cta-button w-full">COMPRAR AGORA</Button>
+</a>
+
             </nav>
           </div>
         </div>

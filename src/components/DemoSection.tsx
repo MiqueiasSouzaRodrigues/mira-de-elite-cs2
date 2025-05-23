@@ -87,9 +87,15 @@ const DemoSection: React.FC = () => {
               </div>
             </div>
             <div className="mt-6 text-center">
-              <Button size="lg" className="cta-button">
-                Adquirir Acesso
-              </Button>
+<a
+  href="https://pay.hotmart.com/J99891192E"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button size="lg" className="cta-button">
+    Adquirir Acesso
+  </Button>
+</a>
             </div>
           </div>
 

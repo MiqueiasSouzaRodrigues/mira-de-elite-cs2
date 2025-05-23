@@ -63,8 +63,8 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-neon">
-                  WhatsApp: +55 (11) 91234-5678
+                <a href="https://wa.me/5562992087765" className="hover:text-neon">
+                  WhatsApp: +55 (62) 99208-7765
                 </a>
               </li>
               <li>

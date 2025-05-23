@@ -48,19 +48,35 @@ const HeroSection: React.FC = () => {
               com tecnologia indetectável.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button
-                size="lg"
-                className="cta-button animate-pulse-neon text-lg"
-              >
-                COMPRE AGORA
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-neon border-neon hover:bg-neon hover:bg-opacity 10 text-lg"
-              >
-                TESTE GRÁTIS
-              </Button>
+<div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+  <a
+    href="https://pay.hotmart.com/D99892524U"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Button
+      size="lg"
+      className="cta-button animate-pulse-neon text-lg"
+    >
+      COMPRE AGORA
+    </Button>
+  </a>
+  
+  <a
+    href="https://wa.me/62992087765?text=Quero%20testar%20o%20cheat%20CS2%20grátis"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Button
+      size="lg"
+      variant="outline"
+      className="text-neon border-neon hover:bg-neon hover:bg-opacity-10 text-lg"
+    >
+      TESTE GRÁTIS
+    </Button>
+  </a>
+</div>
+
             </div>
             <div className="flex items-center justify-center lg:justify-start mt-8 text-gray-300">
               <span className="text-lg mr-2">+ de 10.000 jogadores usando</span>

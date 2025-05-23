@@ -18,13 +18,21 @@ const FinalCTA: React.FC = () => {
           <p className="text-xl text-gray-300 mb-8">
             Junte-se aos milhares de jogadores que já dominam suas partidas com nosso bot.
           </p>
-          <Button
-            size="lg"
-            className="bg-gaming-red hover:bg-red-700 text-white font-bold py-4 px-8 rounded-md uppercase tracking-wider text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-          >
-            ADQUIRA AGORA
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+<a
+  href="https://pay.hotmart.com/D99892524U"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block"
+>
+  <Button
+    size="lg"
+    className="bg-gaming-red hover:bg-red-700 text-white font-bold py-4 px-8 rounded-md uppercase tracking-wider text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+  >
+    ADQUIRA AGORA
+    <ArrowRight className="ml-2 h-5 w-5" />
+  </Button>
+</a>
+
           <p className="text-sm text-gray-400 mt-4">
             Garantia de satisfação ou seu dinheiro de volta em até 7 dias
           </p>

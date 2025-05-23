@@ -107,9 +107,15 @@ const BenefitsSection: React.FC = () => {
 
         <ScrollReveal delay={800}>
           <div className="mt-12 text-center">
-            <Button size="lg" className="cta-button">
-              Quero Vencer Mais Partidas
-            </Button>
+<a
+  href="https://pay.hotmart.com/D99892524U"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button size="lg" className="cta-button">
+    Quero Vencer Mais Partidas
+  </Button>
+</a>
           </div>
         </ScrollReveal>
       </div>

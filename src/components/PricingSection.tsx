@@ -2,7 +2,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { CircleCheck, CalendarDays, Infinity } from "lucide-react";
-import { link } from "fs";
 
 interface PlanProps {
   title: string;
@@ -11,6 +10,7 @@ interface PlanProps {
   features: string[];
   isPopular?: boolean;
   icon: React.ReactNode;
+   link: string;
 }
 
 const PricingPlan: React.FC<PlanProps> = ({
@@ -20,6 +20,7 @@ const PricingPlan: React.FC<PlanProps> = ({
   features,
   isPopular = false,
   icon,
+  link, // ✅ adiciona aqui
 }) => {
   return (
     <div
@@ -51,13 +52,16 @@ const PricingPlan: React.FC<PlanProps> = ({
             </li>
           ))}
         </ul>
-        <Button
-          className={`w-full ${
-            isPopular ? "cta-button" : "bg-gaming-dark hover:bg-gray-800"
-          }`}
-        >
-          COMPRAR AGORA
-        </Button>
+<a
+  href={link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block"
+>
+  <Button className={`w-full ${isPopular ? "cta-button" : "bg-gaming-dark hover:bg-gray-800"}`}>
+    COMPRAR AGORA
+  </Button>
+</a>
       </div>
     </div>
   );

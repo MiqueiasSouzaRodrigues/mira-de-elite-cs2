@@ -41,11 +41,6 @@ const FaqSection: React.FC = () => {
       answer:
         "Sempre que há uma atualização do CS2, nossa equipe trabalha rapidamente para garantir compatibilidade. Clientes ativos recebem atualizações gratuitas do bot, geralmente em menos de 24 horas após updates do jogo.",
     },
-    {
-      question: "Posso transferir o bot para outra conta?",
-      answer:
-        "Sim. Os planos Mensal e Vitalício permitem a transferência do bot para outra conta Steam sem custo adicional. O plano de teste não oferece essa opção.",
-    },
   ];
 
   return (
@@ -81,18 +76,25 @@ const FaqSection: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <h3 className="font-gaming text-2xl mb-4">
-            Ainda tem dúvidas? Fale diretamente com nosso suporte
-          </h3>
-          <Button
-            size="lg"
-            variant="outline"
-            className="text-neon border-neon hover:bg-neon hover:bg-opacity 10 gap-2 text-xl"
-          >
-            <WhatsappIcon />
-            Tirar Dúvidas com Suporte
-          </Button>
-        </div>
+  <h3 className="font-gaming text-2xl mb-4">
+    Ainda tem dúvidas? Fale diretamente com nosso suporte
+  </h3>
+  <a
+    href="https://wa.me/5562992087765"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block"
+  >
+    <Button
+      size="lg"
+      variant="outline"
+      className="text-neon border-neon hover:bg-neon hover:bg-opacity-10 gap-2 text-xl"
+    >
+      <WhatsappIcon />
+      Tirar Dúvidas com Suporte
+    </Button>
+  </a>
+</div>
       </div>
     </section>
   );
