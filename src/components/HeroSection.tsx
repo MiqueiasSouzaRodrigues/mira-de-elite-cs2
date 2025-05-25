@@ -63,7 +63,7 @@ const HeroSection: React.FC = () => {
   </a>
   
   <a
-    href="https://wa.me/62992087765?text=Quero%20testar%20o%20cheat%20CS2%20grátis"
+    href=" https://chat.whatsapp.com/G57GUpjZAc4IQXZ2TVFr94"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -72,7 +72,7 @@ const HeroSection: React.FC = () => {
       variant="outline"
       className="text-neon border-neon hover:bg-neon hover:bg-opacity-10 text-lg"
     >
-      TESTE GRÁTIS
+      ACESSE A COMUNIDADE
     </Button>
   </a>
 </div>
