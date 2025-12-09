@@ -39,11 +39,7 @@ A página inclui seções detalhadas de funcionalidades, planos de assinatura, F
 
 ---
 
-## 📸 Preview do Projeto
 
-<div align="center">
-  <img src="https://placehold.co/800x400/1a1a1a/FFF?text=Preview+da+Landing+Page" alt="Project Screenshot" />
-</div>
 
 ---
 
